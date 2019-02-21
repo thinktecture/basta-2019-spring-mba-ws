@@ -23,3 +23,7 @@ All source code regarding frontend can be found in the [src/frontend](./src/fron
 ### Backend
 
 All source code regarding frontend can be found in the [src/backend](./src/backend/) directory.
+
+### Links
+
+All links can be found in the [links](./links) directory.
