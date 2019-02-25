@@ -5,8 +5,20 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 if (environment.production) {
-  enableProdMode();
+    enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+const bootstrapApp = () => {
+    platformBrowserDynamic().bootstrapModule(AppModule)
+        .catch(err => console.error(err));
+};
+
+if (window['cordova']) {
+    document.addEventListener('deviceready', () => {
+        bootstrapApp();
+    }, false);
+}
+else{
+    bootstrapApp();
+}
+
