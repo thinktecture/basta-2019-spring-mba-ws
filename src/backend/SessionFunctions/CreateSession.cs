@@ -7,6 +7,12 @@ namespace SessionFunctions
 {
     public static class CreateSession
     {
+        /// <summary>
+        /// Function to create a session.
+        /// </summary>
+        /// <param name="model"></param>
+        /// <param name="session"></param>
+        /// <returns></returns>
         [FunctionName("CreateSession")]
         public static IActionResult Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "sessions")] CreateSessionModel model,

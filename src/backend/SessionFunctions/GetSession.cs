@@ -10,6 +10,12 @@ namespace SessionFunctions
 {
     public static class GetSessionFunctions
     {
+        /// <summary>
+        /// Function to retrieve all sessions
+        /// </summary>
+        /// <param name="req"></param>
+        /// <param name="sessions"></param>
+        /// <returns></returns>
         [FunctionName("GetSession")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "sessions")] HttpRequest req,

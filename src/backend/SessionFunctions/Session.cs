@@ -3,7 +3,9 @@ using System;
 
 namespace SessionFunctions
 {
-
+    /// <summary>
+    /// Represents a Session
+    /// </summary>
     public class Session
     {
         // We need JsonProperty to tell Cosmos DB to map this 
