@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "d064a5dd-57b2-4649-9976-0cf7b8f7b41c",
+		"name": "Session API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all Sessions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/sessions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"sessions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Session details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"title\": \"Office Extensibility in 2019: Cross-Plattform Add-ins mit Angular\",\n        \"abstract\": \"Bereits seit der Version 2013 können Sie Microsoft Office durch Add-ins erweitern. Damit sind die Tage von VSTO endlich gezählt. Sie können heute mit modernsten Webtechnologien Erweiterungen für die beliebten Produkte wie Outlook, Excel oder Word erstellen und auf sämtlichen Plattformen bereitstellen. Egal, ob Ihre Anwender Office unter Windows, macOS, Android, iOS oder im Browser verwenden, mit Add-ins können Sie alle Benutzer erreichen. In diesem Vortrag wird Ihnen Thorsten Hans nach einer kurzen theoretischen Einführung zeigen, wie Sie ein neues Add-in für ein Office-Produkt exemplarisch mit dem Single-Page-Application-(SPA-)Framework Angular und TypeScript implementieren und in Office 365 bereitstellen.\",\n        \"speaker\": \"Thorsten Hans\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/sessions/ec317dd0-34bf-40c5-8117-3a4b0a265bd8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"sessions",
+						"ec317dd0-34bf-40c5-8117-3a4b0a265bd8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Session",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Title\": \"Advanced Angular\",\n\t\"Speaker\": \"Thorsten Hans\",\n\t\"Abstract\": \"TBD\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/sessions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"sessions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
