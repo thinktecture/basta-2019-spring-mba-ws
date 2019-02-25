@@ -6,6 +6,8 @@ namespace SessionFunctions
 
     public class Session
     {
+        // We need JsonProperty to tell Cosmos DB to map this 
+        // property to the internal cosmos db Id property
         [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
 
