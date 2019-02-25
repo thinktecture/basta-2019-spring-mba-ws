@@ -1,5 +1,7 @@
 <h4>Session List</h4>
 
+<button class="btn btn-sm btn-primary btn-block mb-4" routerLink="/new-session">Create new Session</button>
+
 <table class="table table-striped table-bordered">
     <thead>
     <tr>
@@ -8,7 +10,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let session of allSessions">
+    <tr *ngFor="let session of allSessions" (click)="navigateToSession(session)">
         <td>{{session.id}}</td>
         <td>{{session.title}}</td>
     </tr>

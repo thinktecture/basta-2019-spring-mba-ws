@@ -8,17 +8,21 @@ import { StartComponent } from './start/start.component';
 import { SessionListComponent } from './session-list/session-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SessionDetailsComponent } from './session-details/session-details.component';
 
 @NgModule({
     declarations: [
         NavigationComponent,
         RootComponent,
         StartComponent,
-        SessionListComponent
+        SessionListComponent,
+        SessionDetailsComponent
     ],
     imports: [
         BrowserModule,
         CommonModule,
+        ReactiveFormsModule,
         HttpClientModule,
         AppRoutingModule
     ],
