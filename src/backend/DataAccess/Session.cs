@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace SessionFunctions
+namespace DataAccess
 {
     /// <summary>
     /// Represents a Session

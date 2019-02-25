@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SessionFunctions", "SessionFunctions\SessionFunctions.csproj", "{D695BC79-E502-48EB-9DBA-69931516FCAB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{3B9DBEB9-742D-4279-A5CD-D1BB256BBEE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D695BC79-E502-48EB-9DBA-69931516FCAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D695BC79-E502-48EB-9DBA-69931516FCAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D695BC79-E502-48EB-9DBA-69931516FCAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B9DBEB9-742D-4279-A5CD-D1BB256BBEE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B9DBEB9-742D-4279-A5CD-D1BB256BBEE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B9DBEB9-742D-4279-A5CD-D1BB256BBEE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B9DBEB9-742D-4279-A5CD-D1BB256BBEE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
